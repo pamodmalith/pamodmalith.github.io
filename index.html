@@ -1,33 +1,212 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Under Construction</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pamod Malith Theekshana | Full-Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      background-color: #f3f4f6;
+      color: #333;
+      padding: 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1f2937;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      margin: 50px 0;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #1f2937;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #4b5563;
+      margin-bottom: 20px;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .skills-list li {
+      background-color: #e5e7eb;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-weight: 500;
+    }
+
+    .project-item {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-item:hover {
+      transform: translateY(-5px);
+    }
+
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      max-width: 500px;
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: 500;
+    }
+
+    input, textarea, button {
+      display: block;
+      width: 100%;
+      margin-top: 8px;
+      padding: 12px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+    }
+
+    button {
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #1d4ed8;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 15px;
+      background-color: #1f2937;
+      color: white;
+      border-radius: 12px;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
-
 <body>
-    <div id="app">
-        <div class="construction-container">
-            <h1>🚧 Under Construction 🚧</h1>
-            <div class="construction-content">
-                
-                <div class="gear">⚙️</div>
-                <p>We're working hard to bring you something amazing!</p>
-                <div class="progress-container">
-                    <div class="progress-bar">
-                        <div class="progress-fill"></div>
-                    </div>
-                    <p class="progress-text">Construction in Progress: <span>50%</span></p>
-                </div>
-                <p class="coming-soon">Coming Soon</p>
-            </div>
-        </div>
-    </div>
-    <script type="module" src="/main.js"></script>
-</body>
+  <header>
+    <nav>
+      <h1>Pamod Malith Theekshana</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate Full-Stack Developer based in Kuliyapitiya, with expertise in building dynamic, responsive web applications using JavaScript, React, and Express.js. I thrive on solving complex technical problems and collaborating with teams to deliver impactful software solutions.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Express.js</li>
+      <li>Problem-Solving</li>
+      <li>Teamwork</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-item">
+      <h3>Project Title 1</h3>
+      <p>Description of the project and technologies used.</p>
+      <a href="#">View Project</a>
+    </div>
+    <div class="project-item">
+      <h3>Project Title 2</h3>
+      <p>Description of the project and technologies used.</p>
+      <a href="#">View Project</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:pamodmoney@gmail.com">pamodmoney@gmail.com</a></p>
+    <p>Phone: <a href="tel:+9477123547">077123547</a></p>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Pamod Malith Theekshana. All rights reserved.</p>
+  </footer>
+</body>
 </html>
